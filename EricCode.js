@@ -19,6 +19,9 @@ num = parseInt(num); // converts a string to an integer value
 		alert("Response = ");
 		for (int i = 0; i <= num; i++) // iterates up until int i breaks even with the positive number entered
 		{
-			alert(i + " "); // print out odd number when condition in if statement is true
+			if (i%2 == 1)
+			{
+				alert(i + " "); // print out odd number when condition in if statement is true
+			}
 		}
 	}
