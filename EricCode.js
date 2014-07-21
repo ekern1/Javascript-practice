@@ -4,7 +4,7 @@ num = parseInt(num); // converts a string to an integer value
 
 	if (isNaN(num)) // tests whether entry is a valid number
 	{
-	  alert("The input is not a number");
+	        alert("The input is not a number");
 	}
 	else if (num <= 0)   // tests for a non positive number
 	{
@@ -16,12 +16,16 @@ num = parseInt(num); // converts a string to an integer value
 	}
 	else
 	{
-		alert("Response = ");
-		for (int i = 0; i <= num; i++) // iterates up until int i breaks even with the positive number entered
-		{
+		var odd = ["Response = "]; 
+		
+		for (i = 0; i <= num; i++) // iterates up until int i breaks even with the positive number entered
+		{			
 			if (i%2 == 1)
 			{
-				alert(i + " "); // print out odd number when condition in if statement is true
+				odd.push(i);
 			}
-		}
+		}	
+		alert(odd);
 	}
+	
+	
