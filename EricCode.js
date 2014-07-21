@@ -25,6 +25,7 @@ num = parseInt(num); // converts a string to an integer value
 				odd.push(i);
 			}
 		}	
+		
 		alert(odd);
 	}
 	
